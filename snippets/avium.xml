@@ -28,7 +28,7 @@
         <linkfile src="tools" dest="build/tools" />
     </project>
 
-    <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="avium" >
+    <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="me" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
@@ -38,6 +38,8 @@
 
     <!-- Frameworks -->
     <project path="frameworks/base" name="android_frameworks_baseAvi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="me" />
+    <project path="frameworks/native" name="android_frameworks_nativeavi" groups="pdk" remote="me" />
+    <project path="frameworks/av" name="android_frameworks_avavi" groups="pdk" remote="me" />
 
     <!-- Packages -->
     <project path="packages/apps/AviumSetup" name="packages_apps_AviumSetup" remote="avium" />
@@ -59,6 +61,7 @@
 
     <!-- external -->
     <project path="external/blurview" name="android_external_blurview" remote="avium" />
+    <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="me" />
 
     <!-- Vendor -->
     <project path="vendor/lineage" name="android_vendor_lineage" remote="me" />
